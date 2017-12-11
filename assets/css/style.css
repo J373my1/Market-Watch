@@ -2,6 +2,12 @@ html {
 	height: 100%;
 }
 
+h1 {
+	color: white;
+	text-align: center;
+	margin: 20px;
+	padding:5px;
+}
 h3, a, div {
 	text-shadow: 2px 2px 2px #000;
 	font-family: raleway;
@@ -21,10 +27,14 @@ input.select-dropdown {
 body {
 	/*position: relative;*/
 	height: 100%;
-	background-color: rgba(30, 73, 174, 0.85);
-	display: flex;
+	background: linear-gradient(-45deg, #35AEF2, #3297B6, #397AF2, #5030F2);
+		background-size: 1000% 1%;
+	-webkit-animation: Gradient 35s ease infinite;
+	-moz-animation: Gradient 35s ease infinite;
+	animation: Gradient 35s ease infinite;
+	/*display: flex;*/
     min-height: 100vh;
-    flex-direction: column;
+    /*flex-direction: column;*/
 }
 
 main {
@@ -36,19 +46,62 @@ nav {
 	padding: 10px;
 }
 
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
 .page-footer {
 	background-color: #1b55c7;
 	text-align: center;
 	height: 70px;
 	padding-bottom: 10px;
+	position: relative;
+	bottom: -365px;
 }
 
-#footerTag {
-
+.ForexPage {
+top: 20px;
 }
 
-nav.nav-extended, a.brand-logo.center  {
+nav.nav-extended, a.brand-logo.center, .page-footer  {
 background-color: #1b55c7;
+	/*background: linear-gradient(-45deg, #4556F2, #3F6AB6, #397AF2, #5030F2);
+		background-size: 400% 400%;
+	-webkit-animation: Gradient 35s ease infinite;
+	-moz-animation: Gradient 35s ease infinite;
+	animation: Gradient 35s ease infinite;*/
 } 
 	
 
@@ -90,7 +143,7 @@ nav .brand-logo.center {
 .inputAPI {
 	/*border: 2px solid #082B6F;*/
 	text-align: center;
-	height: 50%;
+	height: 60vh;
 	overflow: auto;
 	border-radius: 15px;
 }
@@ -106,12 +159,13 @@ nav .brand-logo.center {
 .inputPage3{
 	/*border: 2px solid #082B6F;*/
 	text-align: center;
-	width: 70%;
+	/*width: 70%;
 	height: 70%;
-}
+*/}
 
 .pageOnefix {
 	height: 100%;
+	margin: 20px;
 }
 
 
